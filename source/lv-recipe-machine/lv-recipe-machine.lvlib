@@ -6,9 +6,15 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="examples" Type="Folder">
 		<Item Name="example_01" Type="Folder">
-			<Item Name="_controls" Type="Folder"/>
+			<Item Name="_controls" Type="Folder">
+				<Item Name="example_01_manual_actions.ctl" Type="VI" URL="../example/example_01/_controls/example_01_manual_actions.ctl"/>
+			</Item>
 			<Item Name="_globals" Type="Folder"/>
-			<Item Name="_subvis" Type="Folder"/>
+			<Item Name="_subvis" Type="Folder">
+				<Item Name="manual_test_comparison.vi" Type="VI" URL="../example/example_01/_subvis/manual_test_comparison.vi"/>
+				<Item Name="manual_test_random.vi" Type="VI" URL="../example/example_01/_subvis/manual_test_random.vi"/>
+				<Item Name="manual_test_wait.vi" Type="VI" URL="../example/example_01/_subvis/manual_test_wait.vi"/>
+			</Item>
 			<Item Name="example_01.vi" Type="VI" URL="../example/example_01/example_01.vi"/>
 		</Item>
 	</Item>
@@ -29,12 +35,14 @@
 			<Item Name="manual_state.ctl" Type="VI" URL="../public/_controls/manual_state.ctl"/>
 			<Item Name="mode.ctl" Type="VI" URL="../public/_controls/mode.ctl"/>
 			<Item Name="step.ctl" Type="VI" URL="../public/_controls/step.ctl"/>
+			<Item Name="step_references.ctl" Type="VI" URL="../public/_controls/step_references.ctl"/>
 			<Item Name="step_vi_reference.ctl" Type="VI" URL="../public/_controls/step_vi_reference.ctl"/>
+			<Item Name="transition.ctl" Type="VI" URL="../public/_controls/transition.ctl"/>
 		</Item>
 		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder"/>
 		<Item Name="templates" Type="Folder">
-			<Item Name="step.vit" Type="VI" URL="../public/templates/step.vit">
+			<Item Name="step_.vit" Type="VI" URL="../public/templates/step_.vit">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
 		</Item>

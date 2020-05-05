@@ -11,7 +11,7 @@
 		<Item Name="example_00_architecture.vi" Type="VI" URL="../examples/example_00_architecture.vi"/>
 	</Item>
 	<Item Name="private" Type="Folder">
-		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="_controls" Type="Folder">
 			<Item Name="data.ctl" Type="VI" URL="../private/_controls/data.ctl"/>
 			<Item Name="input.ctl" Type="VI" URL="../private/_controls/input.ctl"/>
@@ -48,15 +48,18 @@
 		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="functions" Type="Folder">
+				<Item Name="add_automatic_steps.vi" Type="VI" URL="../public/_subvis/functions/add_automatic_steps.vi"/>
+				<Item Name="add_manual_actions.vi" Type="VI" URL="../public/_subvis/functions/add_manual_actions.vi"/>
 				<Item Name="config_read.vi" Type="VI" URL="../public/_subvis/functions/config_read.vi"/>
-				<Item Name="initialize.vi" Type="VI" URL="../public/_subvis/functions/initialize.vi"/>
-				<Item Name="shutdown.vi" Type="VI" URL="../public/_subvis/functions/shutdown.vi"/>
+				<Item Name="manual_action.vi" Type="VI" URL="../public/_subvis/functions/manual_action.vi"/>
 				<Item Name="status_read.vi" Type="VI" URL="../public/_subvis/functions/status_read.vi"/>
+				<Item Name="update_mode.vi" Type="VI" URL="../public/_subvis/functions/update_mode.vi"/>
 			</Item>
 			<Item Name="utilities" Type="Folder">
 				<Item Name="util_generate_error.vi" Type="VI" URL="../public/_subvis/utilities/util_generate_error.vi"/>
 				<Item Name="util_get_change_out.vi" Type="VI" URL="../public/_subvis/utilities/util_get_change_out.vi"/>
 				<Item Name="util_set_change_in.vi" Type="VI" URL="../public/_subvis/utilities/util_set_change_in.vi"/>
+				<Item Name="util_transition.vi" Type="VI" URL="../public/_subvis/utilities/util_transition.vi"/>
 			</Item>
 			<Item Name="start.vi" Type="VI" URL="../public/_subvis/start.vi"/>
 			<Item Name="stop.vi" Type="VI" URL="../public/_subvis/stop.vi"/>

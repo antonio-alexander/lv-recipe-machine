@@ -39,6 +39,8 @@
 				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
 			</Item>
+			<Item Name="initialize.vi" Type="VI" URL="../lv-recipe-machine_/public/_subvis/functions/initialize.vi"/>
+			<Item Name="shutdown.vi" Type="VI" URL="../lv-recipe-machine_/public/_subvis/functions/shutdown.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
