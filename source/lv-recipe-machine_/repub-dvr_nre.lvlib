@@ -25,11 +25,9 @@
 				<Item Name="stop_read.vi" Type="VI" URL="../private/_subvis/functions/stop_read.vi"/>
 				<Item Name="stop_write.vi" Type="VI" URL="../private/_subvis/functions/stop_write.vi"/>
 			</Item>
-			<Item Name="status" Type="Folder">
-				<Item Name="access_status.vi" Type="VI" URL="../private/_subvis/status/access_status.vi"/>
-			</Item>
 			<Item Name="utilities" Type="Folder">
 				<Item Name="util_get_change_in.vi" Type="VI" URL="../private/_subvis/utilities/util_get_change_in.vi"/>
+				<Item Name="util_queue_status.vi" Type="VI" URL="../private/_subvis/utilities/util_queue_status.vi"/>
 				<Item Name="util_set_change_out.vi" Type="VI" URL="../private/_subvis/utilities/util_set_change_out.vi"/>
 			</Item>
 			<Item Name="launch_main.vi" Type="VI" URL="../private/_subvis/launch_main.vi"/>
