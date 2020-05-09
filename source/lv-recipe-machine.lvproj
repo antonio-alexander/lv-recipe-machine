@@ -17,6 +17,7 @@
 		<Item Name="_test" Type="Folder" URL="../_test">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="example_01_step_data.ctl" Type="VI" URL="../lv-recipe-machine/example/example_01/_controls/example_01_step_data.ctl"/>
 		<Item Name="lv-recipe-machine.lvlib" Type="Library" URL="../lv-recipe-machine/lv-recipe-machine.lvlib"/>
 		<Item Name="repub-dvr_nre.lvlib" Type="Library" URL="../lv-recipe-machine_/repub-dvr_nre.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
