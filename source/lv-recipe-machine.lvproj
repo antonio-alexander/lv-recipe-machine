@@ -17,9 +17,10 @@
 		<Item Name="_test" Type="Folder" URL="../_test">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="example_01_step_data.ctl" Type="VI" URL="../lv-recipe-machine/example/example_01/_controls/example_01_step_data.ctl"/>
+		<Item Name="examples" Type="Folder">
+			<Item Name="example_01.lvlib" Type="Library" URL="../examples/example_01/example_01.lvlib"/>
+		</Item>
 		<Item Name="lv-recipe-machine.lvlib" Type="Library" URL="../lv-recipe-machine/lv-recipe-machine.lvlib"/>
-		<Item Name="repub-dvr_nre.lvlib" Type="Library" URL="../lv-recipe-machine_/repub-dvr_nre.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="lv-waitgroup.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-waitgroup/lv-waitgroup.lvlib"/>
@@ -40,8 +41,6 @@
 				<Item Name="Semaphore Refnum Core.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Refnum Core.ctl"/>
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
 			</Item>
-			<Item Name="initialize.vi" Type="VI" URL="../lv-recipe-machine_/public/_subvis/functions/initialize.vi"/>
-			<Item Name="shutdown.vi" Type="VI" URL="../lv-recipe-machine_/public/_subvis/functions/shutdown.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
