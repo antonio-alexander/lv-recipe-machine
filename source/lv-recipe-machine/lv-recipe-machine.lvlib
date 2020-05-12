@@ -12,7 +12,9 @@
 	</Item>
 	<Item Name="private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
-		<Item Name="_controls" Type="Folder"/>
+		<Item Name="_controls" Type="Folder">
+			<Item Name="automatic_vi_variant_data.ctl" Type="VI" URL="../private/_controls/automatic_vi_variant_data.ctl"/>
+		</Item>
 		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="functions" Type="Folder">
@@ -22,13 +24,17 @@
 			</Item>
 			<Item Name="utilities" Type="Folder">
 				<Item Name="util_change_out_write.vi" Type="VI" URL="../private/_subvis/utilities/util_change_out_write.vi"/>
-				<Item Name="util_launch_step_action.vi" Type="VI" URL="../private/_subvis/utilities/util_launch_step_action.vi"/>
+				<Item Name="util_launch_automatic_step.vi" Type="VI" URL="../private/_subvis/utilities/util_launch_automatic_step.vi"/>
+				<Item Name="util_launch_criteria.vi" Type="VI" URL="../private/_subvis/utilities/util_launch_criteria.vi"/>
+				<Item Name="util_launch_manual_action.vi" Type="VI" URL="../private/_subvis/utilities/util_launch_manual_action.vi"/>
+				<Item Name="util_launch_transition.vi" Type="VI" URL="../private/_subvis/utilities/util_launch_transition.vi"/>
 				<Item Name="util_queue_status.vi" Type="VI" URL="../private/_subvis/utilities/util_queue_status.vi"/>
 			</Item>
 			<Item Name="launch_main.vi" Type="VI" URL="../private/_subvis/launch_main.vi"/>
 			<Item Name="recipe_logic.vi" Type="VI" URL="../private/_subvis/recipe_logic.vi"/>
 		</Item>
 		<Item Name="block_for_change.vi" Type="VI" URL="../private/_subvis/block_for_change.vi"/>
+		<Item Name="launch_automatic.vi" Type="VI" URL="../private/_subvis/launch_automatic.vi"/>
 		<Item Name="recipe_wrapper.vi" Type="VI" URL="../private/recipe_wrapper.vi"/>
 	</Item>
 	<Item Name="public" Type="Folder">
@@ -50,8 +56,9 @@
 			<Item Name="status.ctl" Type="VI" URL="../public/_controls/status.ctl"/>
 			<Item Name="step.ctl" Type="VI" URL="../public/_controls/step.ctl"/>
 			<Item Name="transition.ctl" Type="VI" URL="../public/_controls/transition.ctl"/>
+			<Item Name="vi_reference_automatic_step.ctl" Type="VI" URL="../public/_controls/vi_reference_automatic_step.ctl"/>
 			<Item Name="vi_reference_criteria.ctl" Type="VI" URL="../public/_controls/vi_reference_criteria.ctl"/>
-			<Item Name="vi_reference_step_action.ctl" Type="VI" URL="../public/_controls/vi_reference_step_action.ctl"/>
+			<Item Name="vi_reference_manual_action.ctl" Type="VI" URL="../public/_controls/vi_reference_manual_action.ctl"/>
 			<Item Name="vi_reference_transition.ctl" Type="VI" URL="../public/_controls/vi_reference_transition.ctl"/>
 		</Item>
 		<Item Name="_globals" Type="Folder"/>
