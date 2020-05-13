@@ -22,6 +22,7 @@
 			<Item Name="automatic_initialize.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_initialize.vi"/>
 			<Item Name="automatic_test_comparison.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_test_comparison.vi"/>
 			<Item Name="automatic_test_random.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_test_random.vi"/>
+			<Item Name="automatic_transition.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_transition.vi"/>
 			<Item Name="automatic_wait.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_wait.vi"/>
 		</Item>
 		<Item Name="manual_actions" Type="Folder">
