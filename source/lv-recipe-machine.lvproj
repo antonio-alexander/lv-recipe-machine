@@ -22,9 +22,6 @@
 		</Item>
 		<Item Name="lv-recipe-machine.lvlib" Type="Library" URL="../lv-recipe-machine/lv-recipe-machine.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="user.lib" Type="Folder">
-				<Item Name="lv-waitgroup.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-waitgroup/lv-waitgroup.lvlib"/>
-			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>

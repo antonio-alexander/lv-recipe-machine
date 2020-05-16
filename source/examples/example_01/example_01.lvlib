@@ -21,6 +21,7 @@
 			<Item Name="automatic_wait.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_wait.vi"/>
 			<Item Name="criteria_count.vi" Type="VI" URL="../_subvis/automatic_steps/criteria_count.vi"/>
 			<Item Name="criteria_initialize.vi" Type="VI" URL="../_subvis/automatic_steps/criteria_initialize.vi"/>
+			<Item Name="launch_wait.vi" Type="VI" URL="../_subvis/automatic_steps/launch_wait.vi"/>
 			<Item Name="transition_comparison.vi" Type="VI" URL="../_subvis/automatic_steps/transition_comparison.vi"/>
 			<Item Name="transition_count.vi" Type="VI" URL="../_subvis/automatic_steps/transition_count.vi"/>
 			<Item Name="transition_simple.vi" Type="VI" URL="../_subvis/automatic_steps/transition_simple.vi"/>

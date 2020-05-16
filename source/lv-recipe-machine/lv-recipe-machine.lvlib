@@ -55,6 +55,7 @@
 			<Item Name="transition.ctl" Type="VI" URL="../public/_controls/transition.ctl"/>
 			<Item Name="vi_reference_automatic_step.ctl" Type="VI" URL="../public/_controls/vi_reference_automatic_step.ctl"/>
 			<Item Name="vi_reference_criteria.ctl" Type="VI" URL="../public/_controls/vi_reference_criteria.ctl"/>
+			<Item Name="vi_reference_launch.ctl" Type="VI" URL="../public/_controls/vi_reference_launch.ctl"/>
 			<Item Name="vi_reference_manual_action.ctl" Type="VI" URL="../public/_controls/vi_reference_manual_action.ctl"/>
 			<Item Name="vi_reference_transition.ctl" Type="VI" URL="../public/_controls/vi_reference_transition.ctl"/>
 			<Item Name="vi_reference_type.ctl" Type="VI" URL="../public/_controls/vi_reference_type.ctl"/>
@@ -79,6 +80,7 @@
 			<Item Name="utilities" Type="Folder">
 				<Item Name="util_change_in_write.vi" Type="VI" URL="../public/_subvis/utilities/util_change_in_write.vi"/>
 				<Item Name="util_generate_error.vi" Type="VI" URL="../public/_subvis/utilities/util_generate_error.vi"/>
+				<Item Name="util_launch_auto_step.vi" Type="VI" URL="../public/_subvis/utilities/util_launch_auto_step.vi"/>
 				<Item Name="util_transition_automatic.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_automatic.vi"/>
 				<Item Name="util_transition_criteria.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_criteria.vi"/>
 				<Item Name="util_transition_manual.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_manual.vi"/>
@@ -91,6 +93,7 @@
 			<Item Name="criteria_.vit" Type="VI" URL="../public/_templates/criteria_.vit"/>
 			<Item Name="function_command_.vit" Type="VI" URL="../public/_templates/function_command_.vit"/>
 			<Item Name="function_sync_.vit" Type="VI" URL="../public/_templates/function_sync_.vit"/>
+			<Item Name="launch_.vit" Type="VI" URL="../public/_templates/launch_.vit"/>
 			<Item Name="manual_action_.vit" Type="VI" URL="../public/_templates/manual_action_.vit"/>
 			<Item Name="transition_.vit" Type="VI" URL="../public/_templates/transition_.vit"/>
 		</Item>
