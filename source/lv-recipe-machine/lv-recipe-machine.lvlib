@@ -80,18 +80,19 @@
 				<Item Name="util_change_in_write.vi" Type="VI" URL="../public/_subvis/utilities/util_change_in_write.vi"/>
 				<Item Name="util_generate_error.vi" Type="VI" URL="../public/_subvis/utilities/util_generate_error.vi"/>
 				<Item Name="util_transition_automatic.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_automatic.vi"/>
+				<Item Name="util_transition_criteria.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_criteria.vi"/>
 				<Item Name="util_transition_manual.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_manual.vi"/>
 			</Item>
 			<Item Name="start.vi" Type="VI" URL="../public/_subvis/start.vi"/>
 			<Item Name="stop.vi" Type="VI" URL="../public/_subvis/stop.vi"/>
 		</Item>
 		<Item Name="templates" Type="Folder">
-			<Item Name="automatic_criteria_.vit" Type="VI" URL="../public/_templates/automatic_criteria_.vit"/>
 			<Item Name="automatic_step_.vit" Type="VI" URL="../public/_templates/automatic_step_.vit"/>
-			<Item Name="automatic_transition_.vit" Type="VI" URL="../public/_templates/automatic_transition_.vit"/>
+			<Item Name="criteria_.vit" Type="VI" URL="../public/_templates/criteria_.vit"/>
 			<Item Name="function_command_.vit" Type="VI" URL="../public/_templates/function_command_.vit"/>
 			<Item Name="function_sync_.vit" Type="VI" URL="../public/_templates/function_sync_.vit"/>
 			<Item Name="manual_action_.vit" Type="VI" URL="../public/_templates/manual_action_.vit"/>
+			<Item Name="transition_.vit" Type="VI" URL="../public/_templates/transition_.vit"/>
 		</Item>
 	</Item>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>

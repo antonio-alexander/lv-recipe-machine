@@ -8,31 +8,34 @@
 
 </Property>
 	<Item Name="_controls" Type="Folder">
-		<Item Name="automatic_steps.ctl" Type="VI" URL="../_controls/automatic_steps.ctl"/>
-		<Item Name="manual_actions.ctl" Type="VI" URL="../_controls/manual_actions.ctl"/>
 		<Item Name="recipes.ctl" Type="VI" URL="../_controls/recipes.ctl"/>
-		<Item Name="step_data.ctl" Type="VI" URL="../_controls/step_data.ctl"/>
+		<Item Name="steps_actions.ctl" Type="VI" URL="../_controls/steps_actions.ctl"/>
+		<Item Name="steps_actions_data.ctl" Type="VI" URL="../_controls/steps_actions_data.ctl"/>
 	</Item>
-	<Item Name="_globals" Type="Folder"/>
+	<Item Name="_globals" Type="Folder">
+		<Item Name="fg_stop.vi" Type="VI" URL="../_globals/fg_stop.vi"/>
+	</Item>
 	<Item Name="_subvis" Type="Folder">
 		<Item Name="automatic_steps" Type="Folder">
-			<Item Name="automatic_complete_continue.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_complete_continue.vi"/>
-			<Item Name="automatic_complete_fail.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_complete_fail.vi"/>
-			<Item Name="automatic_complete_finish.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_complete_finish.vi"/>
-			<Item Name="automatic_initialize.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_initialize.vi"/>
-			<Item Name="automatic_test_comparison.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_test_comparison.vi"/>
-			<Item Name="automatic_test_random.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_test_random.vi"/>
-			<Item Name="automatic_transition.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_transition.vi"/>
+			<Item Name="automatic_random.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_random.vi"/>
 			<Item Name="automatic_wait.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_wait.vi"/>
+			<Item Name="criteria_count.vi" Type="VI" URL="../_subvis/automatic_steps/criteria_count.vi"/>
+			<Item Name="criteria_initialize.vi" Type="VI" URL="../_subvis/automatic_steps/criteria_initialize.vi"/>
+			<Item Name="transition_comparison.vi" Type="VI" URL="../_subvis/automatic_steps/transition_comparison.vi"/>
+			<Item Name="transition_count.vi" Type="VI" URL="../_subvis/automatic_steps/transition_count.vi"/>
+			<Item Name="transition_simple.vi" Type="VI" URL="../_subvis/automatic_steps/transition_simple.vi"/>
 		</Item>
 		<Item Name="manual_actions" Type="Folder">
-			<Item Name="manual_test_comparison.vi" Type="VI" URL="../_subvis/manual_actions/manual_test_comparison.vi"/>
-			<Item Name="manual_test_random.vi" Type="VI" URL="../_subvis/manual_actions/manual_test_random.vi"/>
-			<Item Name="manual_test_wait.vi" Type="VI" URL="../_subvis/manual_actions/manual_test_wait.vi"/>
+			<Item Name="manual_comparison.vi" Type="VI" URL="../_subvis/manual_actions/manual_comparison.vi"/>
+			<Item Name="manual_random.vi" Type="VI" URL="../_subvis/manual_actions/manual_random.vi"/>
+			<Item Name="manual_wait.vi" Type="VI" URL="../_subvis/manual_actions/manual_wait.vi"/>
+		</Item>
+		<Item Name="utilities" Type="Folder">
+			<Item Name="util_stop_write.vi" Type="VI" URL="../_subvis/utilities/util_stop_write.vi"/>
 		</Item>
 		<Item Name="initialize.vi" Type="VI" URL="../_subvis/initialize.vi"/>
-		<Item Name="load_automatic_steps.vi" Type="VI" URL="../_subvis/load_automatic_steps.vi"/>
-		<Item Name="load_manual_actions.vi" Type="VI" URL="../_subvis/load_manual_actions.vi"/>
+		<Item Name="load_automatic.vi" Type="VI" URL="../_subvis/load_automatic.vi"/>
+		<Item Name="load_manual.vi" Type="VI" URL="../_subvis/load_manual.vi"/>
 		<Item Name="load_recipes.vi" Type="VI" URL="../_subvis/load_recipes.vi"/>
 	</Item>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>
