@@ -14,6 +14,8 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="_controls" Type="Folder">
 			<Item Name="automatic_vi_variant_data.ctl" Type="VI" URL="../private/_controls/automatic_vi_variant_data.ctl"/>
+			<Item Name="timer_command.ctl" Type="VI" URL="../private/_controls/timer_command.ctl"/>
+			<Item Name="timers.ctl" Type="VI" URL="../private/_controls/timers.ctl"/>
 		</Item>
 		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
@@ -25,6 +27,7 @@
 			<Item Name="utilities" Type="Folder">
 				<Item Name="util_change_out_write.vi" Type="VI" URL="../private/_subvis/utilities/util_change_out_write.vi"/>
 				<Item Name="util_queue_status.vi" Type="VI" URL="../private/_subvis/utilities/util_queue_status.vi"/>
+				<Item Name="util_timer.vi" Type="VI" URL="../private/_subvis/utilities/util_timer.vi"/>
 			</Item>
 			<Item Name="launch_main.vi" Type="VI" URL="../private/_subvis/launch_main.vi"/>
 			<Item Name="recipe_logic.vi" Type="VI" URL="../private/_subvis/recipe_logic.vi"/>
@@ -52,6 +55,7 @@
 			<Item Name="references.ctl" Type="VI" URL="../public/_controls/references.ctl"/>
 			<Item Name="status.ctl" Type="VI" URL="../public/_controls/status.ctl"/>
 			<Item Name="step.ctl" Type="VI" URL="../public/_controls/step.ctl"/>
+			<Item Name="timer.ctl" Type="VI" URL="../public/_controls/timer.ctl"/>
 			<Item Name="transition.ctl" Type="VI" URL="../public/_controls/transition.ctl"/>
 			<Item Name="vi_reference_automatic_step.ctl" Type="VI" URL="../public/_controls/vi_reference_automatic_step.ctl"/>
 			<Item Name="vi_reference_criteria.ctl" Type="VI" URL="../public/_controls/vi_reference_criteria.ctl"/>
