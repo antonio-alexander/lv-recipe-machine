@@ -108,5 +108,4 @@
 		</Item>
 	</Item>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>
-	<Item Name="readme.md" Type="Document" URL="../readme.md"/>
 </Library>

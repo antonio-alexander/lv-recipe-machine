@@ -11,14 +11,11 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="_dependencies" Type="Folder" URL="../_dependencies">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="_test" Type="Folder" URL="../_test">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="lv-recipe-machine.lvlib" Type="Library" URL="../lv-recipe-machine/lv-recipe-machine.lvlib"/>
+		<Item Name="example_01.lvlib" Type="Library" URL="../lv-recipe-machine-examples/example_01/example_01.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="user.lib" Type="Folder">
+				<Item Name="lv-recipe-machine.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-recipe-machine/lv-recipe-machine.lvlib"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
@@ -37,18 +34,18 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="lv-recipe-machine" Type="Zip File">
+			<Item Name="lv-recipe-machine-examples" Type="Zip File">
 				<Property Name="Absolute[0]" Type="Bool">false</Property>
-				<Property Name="BuildName" Type="Str">lv-recipe-machine</Property>
+				<Property Name="BuildName" Type="Str">lv-recipe-machine-examples</Property>
 				<Property Name="Comments" Type="Str"></Property>
-				<Property Name="DestinationID[0]" Type="Str">{5DDD4AB0-16DC-4A6D-A378-FB3335D4E8F1}</Property>
+				<Property Name="DestinationID[0]" Type="Str">{96D5157D-9460-4C9F-A4AF-D4AE33735E0D}</Property>
 				<Property Name="DestinationItemCount" Type="Int">1</Property>
 				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
 				<Property Name="IncludedItemCount" Type="Int">1</Property>
-				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/lv-recipe-machine.lvlib</Property>
+				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/example_01.lvlib</Property>
 				<Property Name="IncludeProject" Type="Bool">false</Property>
-				<Property Name="Path[0]" Type="Path">../../build/working/lv-recipe-machine.zip</Property>
-				<Property Name="ZipBase" Type="Str">NI_zipbasevirtual</Property>
+				<Property Name="Path[0]" Type="Path">../../distribution/working/lv-recipe-machine-examples.zip</Property>
+				<Property Name="ZipBase" Type="Str">NI_zipbasedefault</Property>
 			</Item>
 		</Item>
 	</Item>
