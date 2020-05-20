@@ -15,3 +15,9 @@
 *.aliases
 *.lvlps
 .cache/
+
+#Working/builds
+build
+builds
+distribution/vipb/*.vip
+distribution/working
