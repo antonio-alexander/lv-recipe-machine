@@ -14,10 +14,20 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="_controls" Type="Folder">
 			<Item Name="automatic_vi_variant_data.ctl" Type="VI" URL="../private/_controls/automatic_vi_variant_data.ctl"/>
+			<Item Name="data.ctl" Type="VI" URL="../private/_controls/data.ctl"/>
+			<Item Name="fg_command.ctl" Type="VI" URL="../private/_controls/fg_command.ctl"/>
+			<Item Name="input_command.ctl" Type="VI" URL="../private/_controls/input_command.ctl"/>
+			<Item Name="output.ctl" Type="VI" URL="../private/_controls/output.ctl"/>
+			<Item Name="recipe_data.ctl" Type="VI" URL="../private/_controls/recipe_data.ctl"/>
+			<Item Name="references.ctl" Type="VI" URL="../private/_controls/references.ctl"/>
+			<Item Name="timer.ctl" Type="VI" URL="../private/_controls/timer.ctl"/>
 			<Item Name="timer_command.ctl" Type="VI" URL="../private/_controls/timer_command.ctl"/>
 			<Item Name="timers.ctl" Type="VI" URL="../private/_controls/timers.ctl"/>
 		</Item>
-		<Item Name="_globals" Type="Folder"/>
+		<Item Name="_globals" Type="Folder">
+			<Item Name="fg_references.vi" Type="VI" URL="../private/_globals/fg_references.vi"/>
+			<Item Name="fg_vi_reference.vi" Type="VI" URL="../private/_globals/fg_vi_reference.vi"/>
+		</Item>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="functions" Type="Folder">
 				<Item Name="die.vi" Type="VI" URL="../private/_subvis/functions/die.vi"/>
@@ -43,19 +53,13 @@
 			<Item Name="automatic_state.ctl" Type="VI" URL="../public/_controls/automatic_state.ctl"/>
 			<Item Name="change.ctl" Type="VI" URL="../public/_controls/change.ctl"/>
 			<Item Name="configuration.ctl" Type="VI" URL="../public/_controls/configuration.ctl"/>
-			<Item Name="data.ctl" Type="VI" URL="../public/_controls/data.ctl"/>
 			<Item Name="error.ctl" Type="VI" URL="../public/_controls/error.ctl"/>
 			<Item Name="input.ctl" Type="VI" URL="../public/_controls/input.ctl"/>
-			<Item Name="input_command.ctl" Type="VI" URL="../public/_controls/input_command.ctl"/>
 			<Item Name="manual_state.ctl" Type="VI" URL="../public/_controls/manual_state.ctl"/>
 			<Item Name="mode.ctl" Type="VI" URL="../public/_controls/mode.ctl"/>
-			<Item Name="output.ctl" Type="VI" URL="../public/_controls/output.ctl"/>
-			<Item Name="recipe_data.ctl" Type="VI" URL="../public/_controls/recipe_data.ctl"/>
 			<Item Name="recipe_step.ctl" Type="VI" URL="../public/_controls/recipe_step.ctl"/>
-			<Item Name="references.ctl" Type="VI" URL="../public/_controls/references.ctl"/>
 			<Item Name="status.ctl" Type="VI" URL="../public/_controls/status.ctl"/>
 			<Item Name="step.ctl" Type="VI" URL="../public/_controls/step.ctl"/>
-			<Item Name="timer.ctl" Type="VI" URL="../public/_controls/timer.ctl"/>
 			<Item Name="transition.ctl" Type="VI" URL="../public/_controls/transition.ctl"/>
 			<Item Name="vi_reference_automatic_step.ctl" Type="VI" URL="../public/_controls/vi_reference_automatic_step.ctl"/>
 			<Item Name="vi_reference_criteria.ctl" Type="VI" URL="../public/_controls/vi_reference_criteria.ctl"/>
@@ -64,7 +68,6 @@
 			<Item Name="vi_reference_transition.ctl" Type="VI" URL="../public/_controls/vi_reference_transition.ctl"/>
 			<Item Name="vi_reference_type.ctl" Type="VI" URL="../public/_controls/vi_reference_type.ctl"/>
 		</Item>
-		<Item Name="_globals" Type="Folder"/>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="functions" Type="Folder">
 				<Item Name="automatic_abort.vi" Type="VI" URL="../public/_subvis/functions/automatic_abort.vi"/>
@@ -74,6 +77,8 @@
 				<Item Name="automatic_start.vi" Type="VI" URL="../public/_subvis/functions/automatic_start.vi"/>
 				<Item Name="automatic_steps_write.vi" Type="VI" URL="../public/_subvis/functions/automatic_steps_write.vi"/>
 				<Item Name="config_read.vi" Type="VI" URL="../public/_subvis/functions/config_read.vi"/>
+				<Item Name="event_register_change_out.vi" Type="VI" URL="../public/_subvis/functions/event_register_change_out.vi"/>
+				<Item Name="event_register_status.vi" Type="VI" URL="../public/_subvis/functions/event_register_status.vi"/>
 				<Item Name="initialize.vi" Type="VI" URL="../public/_subvis/functions/initialize.vi"/>
 				<Item Name="manual_action.vi" Type="VI" URL="../public/_subvis/functions/manual_action.vi"/>
 				<Item Name="manual_actions_write.vi" Type="VI" URL="../public/_subvis/functions/manual_actions_write.vi"/>
