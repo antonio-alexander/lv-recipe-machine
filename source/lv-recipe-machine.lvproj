@@ -47,7 +47,7 @@
 				<Property Name="IncludedItemCount" Type="Int">1</Property>
 				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/lv-recipe-machine.lvlib</Property>
 				<Property Name="IncludeProject" Type="Bool">false</Property>
-				<Property Name="Path[0]" Type="Path">../../build/working/lv-recipe-machine.zip</Property>
+				<Property Name="Path[0]" Type="Path">../../distribution/working/lv-recipe-machine.zip</Property>
 				<Property Name="ZipBase" Type="Str">NI_zipbasevirtual</Property>
 			</Item>
 		</Item>

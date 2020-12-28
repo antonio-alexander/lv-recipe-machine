@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2020-05-20 09:21:59" Creator="noobius" Comments="" ID="614d221bb9e510e4d288eba786ae3310">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2020-12-28 13:07:05" Creator="noobius" Comments="" ID="853ed62532d3f19356140573cf8a80dc">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_recipe_machine</Package_File_Name>
-    <Library_Version>0.9.0.2</Library_Version>
+    <Library_Version>0.10.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-recipe-machine</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -32,7 +32,7 @@
       <Copyright/>
       <Packager>Antonio Alexander</Packager>
       <URL>https://github.com/antonio-alexander/lv-recipe-machine/</URL>
-      <Release_Notes/>
+      <Release_Notes>Added automatic data variant output for status_read</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -111,11 +111,8 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
     </Source_Files>
-    <License_Agreement_Filepath>..\..\..\..\..\..\F\github.com\antonio-alexander\lv-recipe-machine\LICENSE</License_Agreement_Filepath>
+    <License_Agreement_Filepath>..\..\LICENSE</License_Agreement_Filepath>
     <Licensing_and_Activation>
       <License_LF_file_path/>
       <Licensed_library_file_path/>
@@ -241,7 +238,7 @@
         <Path>..\working\lv-recipe-machine\main.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>507D17EEA6D5A0AC899D7870FD1D973E</GUID>
+      <GUID>60C704D6FE423BED8E52F2344CB8EC0B</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -276,7 +273,7 @@
         <Path>..\working\lv-recipe-machine\examples\example_00_architecture.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>C20F00AB72C84D08D5F9AF8631682366</GUID>
+      <GUID>F19D8DE154F13539E3C1DFAE4AF21CFA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -311,7 +308,7 @@
         <Path>..\working\lv-recipe-machine\private\recipe_wrapper.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2098D20A4522F6D75A7B49A276D3B3B8</GUID>
+      <GUID>E1576A2A0F79DE0A489760FCA346D27B</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -330,9 +327,9 @@
       <Description/>
       <Synchronization_Info>
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
-        <Synchronize_Directory_Path>..\..\..\..\..\..\..</Synchronize_Directory_Path>
+        <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>4DBB07783FADD31BEA0A4BBE49DF01E0</GUID>
+      <GUID>3C7ECD61F2BB584B84C27120D65D632B</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
