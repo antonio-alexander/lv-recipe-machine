@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.10.0] - 2020-12-28
 
 - Modified the status to also output the automatic data to allow better communication as to what's going on within the recipe machine when running in automatic mode.
+- Modified the resume api to include an optional start index
+- Added additional function to register for all events at once
 
 ## [0.9.0] - 2020-05-20
 

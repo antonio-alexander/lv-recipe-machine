@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2020-12-28 13:07:05" Creator="noobius" Comments="" ID="853ed62532d3f19356140573cf8a80dc">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2020-12-29 12:51:33" Creator="noobius" Comments="" ID="87d3550dc912d4d10c0e3da0f7e4a812">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_recipe_machine</Package_File_Name>
-    <Library_Version>0.10.0.1</Library_Version>
+    <Library_Version>0.10.0.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-recipe-machine</Library_Source_Folder>
-    <Library_Output_Folder>.</Library_Output_Folder>
+    <Library_Output_Folder>..\vipm</Library_Output_Folder>
     <Company_Name>antonio-alexander</Company_Name>
     <Library_Summary/>
     <Library_License>MIT</Library_License>
@@ -32,7 +32,7 @@
       <Copyright/>
       <Packager>Antonio Alexander</Packager>
       <URL>https://github.com/antonio-alexander/lv-recipe-machine/</URL>
-      <Release_Notes>Added automatic data variant output for status_read</Release_Notes>
+      <Release_Notes>Added automatic data variant output for status_read, added api to register for all events, modified the resume api to include an optional recipe index.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -238,7 +238,7 @@
         <Path>..\working\lv-recipe-machine\main.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>60C704D6FE423BED8E52F2344CB8EC0B</GUID>
+      <GUID>5A6E699F566C44027394ABFA19163733</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -273,7 +273,7 @@
         <Path>..\working\lv-recipe-machine\examples\example_00_architecture.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F19D8DE154F13539E3C1DFAE4AF21CFA</GUID>
+      <GUID>BD25B5F95AA44200BFCF4DE4566243DD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -308,7 +308,7 @@
         <Path>..\working\lv-recipe-machine\private\recipe_wrapper.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E1576A2A0F79DE0A489760FCA346D27B</GUID>
+      <GUID>BF4491DE58E2838B2A38FA138E7DCF1D</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -329,7 +329,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>3C7ECD61F2BB584B84C27120D65D632B</GUID>
+      <GUID>7F386FE2AF723BBC8A45ED51FB3E6C68</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

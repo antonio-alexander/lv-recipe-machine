@@ -19,5 +19,5 @@
 #Working/builds
 build
 builds
-distribution/vipb/*.vip
+distribution/vipm/*.vip
 distribution/working
