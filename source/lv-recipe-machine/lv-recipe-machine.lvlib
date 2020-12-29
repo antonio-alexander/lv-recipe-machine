@@ -42,70 +42,71 @@
 			<Item Name="launch_main.vi" Type="VI" URL="../private/_subvis/launch_main.vi"/>
 			<Item Name="recipe_logic.vi" Type="VI" URL="../private/_subvis/recipe_logic.vi"/>
 		</Item>
-		<Item Name="public" Type="Folder">
-			<Item Name="_controls" Type="Folder">
-				<Item Name="automatic_state.ctl" Type="VI" URL="../public/_controls/automatic_state.ctl"/>
-				<Item Name="change.ctl" Type="VI" URL="../public/_controls/change.ctl"/>
-				<Item Name="configuration.ctl" Type="VI" URL="../public/_controls/configuration.ctl"/>
-				<Item Name="error.ctl" Type="VI" URL="../public/_controls/error.ctl"/>
-				<Item Name="input.ctl" Type="VI" URL="../public/_controls/input.ctl"/>
-				<Item Name="manual_state.ctl" Type="VI" URL="../public/_controls/manual_state.ctl"/>
-				<Item Name="mode.ctl" Type="VI" URL="../public/_controls/mode.ctl"/>
-				<Item Name="recipe_step.ctl" Type="VI" URL="../public/_controls/recipe_step.ctl"/>
-				<Item Name="status.ctl" Type="VI" URL="../public/_controls/status.ctl"/>
-				<Item Name="step.ctl" Type="VI" URL="../public/_controls/step.ctl"/>
-				<Item Name="transition.ctl" Type="VI" URL="../public/_controls/transition.ctl"/>
-				<Item Name="vi_reference_automatic_step.ctl" Type="VI" URL="../public/_controls/vi_reference_automatic_step.ctl"/>
-				<Item Name="vi_reference_criteria.ctl" Type="VI" URL="../public/_controls/vi_reference_criteria.ctl"/>
-				<Item Name="vi_reference_launch.ctl" Type="VI" URL="../public/_controls/vi_reference_launch.ctl"/>
-				<Item Name="vi_reference_manual_action.ctl" Type="VI" URL="../public/_controls/vi_reference_manual_action.ctl"/>
-				<Item Name="vi_reference_transition.ctl" Type="VI" URL="../public/_controls/vi_reference_transition.ctl"/>
-				<Item Name="vi_reference_type.ctl" Type="VI" URL="../public/_controls/vi_reference_type.ctl"/>
-			</Item>
-			<Item Name="_subvis" Type="Folder">
-				<Item Name="functions" Type="Folder">
-					<Item Name="automatic_abort.vi" Type="VI" URL="../public/_subvis/functions/automatic_abort.vi"/>
-					<Item Name="automatic_pause.vi" Type="VI" URL="../public/_subvis/functions/automatic_pause.vi"/>
-					<Item Name="automatic_recipe_write.vi" Type="VI" URL="../public/_subvis/functions/automatic_recipe_write.vi"/>
-					<Item Name="automatic_resume.vi" Type="VI" URL="../public/_subvis/functions/automatic_resume.vi"/>
-					<Item Name="automatic_start.vi" Type="VI" URL="../public/_subvis/functions/automatic_start.vi"/>
-					<Item Name="automatic_steps_write.vi" Type="VI" URL="../public/_subvis/functions/automatic_steps_write.vi"/>
-					<Item Name="config_read.vi" Type="VI" URL="../public/_subvis/functions/config_read.vi"/>
-					<Item Name="event_register.vi" Type="VI" URL="../public/_subvis/functions/event_register.vi"/>
-					<Item Name="event_register_change_out.vi" Type="VI" URL="../public/_subvis/functions/event_register_change_out.vi"/>
-					<Item Name="event_register_status.vi" Type="VI" URL="../public/_subvis/functions/event_register_status.vi"/>
-					<Item Name="initialize.vi" Type="VI" URL="../public/_subvis/functions/initialize.vi"/>
-					<Item Name="manual_action.vi" Type="VI" URL="../public/_subvis/functions/manual_action.vi"/>
-					<Item Name="manual_actions_write.vi" Type="VI" URL="../public/_subvis/functions/manual_actions_write.vi"/>
-					<Item Name="shutdown.vi" Type="VI" URL="../public/_subvis/functions/shutdown.vi"/>
-					<Item Name="status_read.vi" Type="VI" URL="../public/_subvis/functions/status_read.vi"/>
-					<Item Name="update_mode.vi" Type="VI" URL="../public/_subvis/functions/update_mode.vi"/>
-				</Item>
-				<Item Name="utilities" Type="Folder">
-					<Item Name="util_change_in_write.vi" Type="VI" URL="../public/_subvis/utilities/util_change_in_write.vi"/>
-					<Item Name="util_generate_error.vi" Type="VI" URL="../public/_subvis/utilities/util_generate_error.vi"/>
-					<Item Name="util_launch_auto_step.vi" Type="VI" URL="../public/_subvis/utilities/util_launch_auto_step.vi"/>
-					<Item Name="util_transition_automatic.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_automatic.vi"/>
-					<Item Name="util_transition_criteria.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_criteria.vi"/>
-					<Item Name="util_transition_manual.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_manual.vi"/>
-				</Item>
-				<Item Name="start.vi" Type="VI" URL="../public/_subvis/start.vi"/>
-				<Item Name="stop.vi" Type="VI" URL="../public/_subvis/stop.vi"/>
-			</Item>
-			<Item Name="templates" Type="Folder">
-				<Item Name="automatic_step_.vit" Type="VI" URL="../public/_templates/automatic_step_.vit"/>
-				<Item Name="criteria_.vit" Type="VI" URL="../public/_templates/criteria_.vit"/>
-				<Item Name="function_command_.vit" Type="VI" URL="../public/_templates/function_command_.vit"/>
-				<Item Name="function_sync_.vit" Type="VI" URL="../public/_templates/function_sync_.vit"/>
-				<Item Name="launch_.vit" Type="VI" URL="../public/_templates/launch_.vit"/>
-				<Item Name="manual_action_.vit" Type="VI" URL="../public/_templates/manual_action_.vit"/>
-				<Item Name="transition_.vit" Type="VI" URL="../public/_templates/transition_.vit"/>
-			</Item>
-		</Item>
 		<Item Name="block_for_change.vi" Type="VI" URL="../private/_subvis/block_for_change.vi"/>
 		<Item Name="launch_vi.vi" Type="VI" URL="../private/_subvis/launch_vi.vi"/>
 		<Item Name="launch_vi_transition.vi" Type="VI" URL="../private/_subvis/launch_vi_transition.vi"/>
 		<Item Name="recipe_wrapper.vi" Type="VI" URL="../private/recipe_wrapper.vi"/>
+	</Item>
+	<Item Name="public" Type="Folder">
+		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
+		<Item Name="_controls" Type="Folder">
+			<Item Name="automatic_state.ctl" Type="VI" URL="../public/_controls/automatic_state.ctl"/>
+			<Item Name="change.ctl" Type="VI" URL="../public/_controls/change.ctl"/>
+			<Item Name="configuration.ctl" Type="VI" URL="../public/_controls/configuration.ctl"/>
+			<Item Name="error.ctl" Type="VI" URL="../public/_controls/error.ctl"/>
+			<Item Name="input.ctl" Type="VI" URL="../public/_controls/input.ctl"/>
+			<Item Name="manual_state.ctl" Type="VI" URL="../public/_controls/manual_state.ctl"/>
+			<Item Name="mode.ctl" Type="VI" URL="../public/_controls/mode.ctl"/>
+			<Item Name="recipe_step.ctl" Type="VI" URL="../public/_controls/recipe_step.ctl"/>
+			<Item Name="status.ctl" Type="VI" URL="../public/_controls/status.ctl"/>
+			<Item Name="step.ctl" Type="VI" URL="../public/_controls/step.ctl"/>
+			<Item Name="transition.ctl" Type="VI" URL="../public/_controls/transition.ctl"/>
+			<Item Name="vi_reference_automatic_step.ctl" Type="VI" URL="../public/_controls/vi_reference_automatic_step.ctl"/>
+			<Item Name="vi_reference_criteria.ctl" Type="VI" URL="../public/_controls/vi_reference_criteria.ctl"/>
+			<Item Name="vi_reference_launch.ctl" Type="VI" URL="../public/_controls/vi_reference_launch.ctl"/>
+			<Item Name="vi_reference_manual_action.ctl" Type="VI" URL="../public/_controls/vi_reference_manual_action.ctl"/>
+			<Item Name="vi_reference_transition.ctl" Type="VI" URL="../public/_controls/vi_reference_transition.ctl"/>
+			<Item Name="vi_reference_type.ctl" Type="VI" URL="../public/_controls/vi_reference_type.ctl"/>
+		</Item>
+		<Item Name="_subvis" Type="Folder">
+			<Item Name="functions" Type="Folder">
+				<Item Name="automatic_abort.vi" Type="VI" URL="../public/_subvis/functions/automatic_abort.vi"/>
+				<Item Name="automatic_pause.vi" Type="VI" URL="../public/_subvis/functions/automatic_pause.vi"/>
+				<Item Name="automatic_recipe_write.vi" Type="VI" URL="../public/_subvis/functions/automatic_recipe_write.vi"/>
+				<Item Name="automatic_resume.vi" Type="VI" URL="../public/_subvis/functions/automatic_resume.vi"/>
+				<Item Name="automatic_start.vi" Type="VI" URL="../public/_subvis/functions/automatic_start.vi"/>
+				<Item Name="automatic_steps_write.vi" Type="VI" URL="../public/_subvis/functions/automatic_steps_write.vi"/>
+				<Item Name="config_read.vi" Type="VI" URL="../public/_subvis/functions/config_read.vi"/>
+				<Item Name="event_register.vi" Type="VI" URL="../public/_subvis/functions/event_register.vi"/>
+				<Item Name="event_register_change_out.vi" Type="VI" URL="../public/_subvis/functions/event_register_change_out.vi"/>
+				<Item Name="event_register_status.vi" Type="VI" URL="../public/_subvis/functions/event_register_status.vi"/>
+				<Item Name="initialize.vi" Type="VI" URL="../public/_subvis/functions/initialize.vi"/>
+				<Item Name="manual_action.vi" Type="VI" URL="../public/_subvis/functions/manual_action.vi"/>
+				<Item Name="manual_actions_write.vi" Type="VI" URL="../public/_subvis/functions/manual_actions_write.vi"/>
+				<Item Name="shutdown.vi" Type="VI" URL="../public/_subvis/functions/shutdown.vi"/>
+				<Item Name="status_read.vi" Type="VI" URL="../public/_subvis/functions/status_read.vi"/>
+				<Item Name="update_mode.vi" Type="VI" URL="../public/_subvis/functions/update_mode.vi"/>
+			</Item>
+			<Item Name="utilities" Type="Folder">
+				<Item Name="util_change_in_write.vi" Type="VI" URL="../public/_subvis/utilities/util_change_in_write.vi"/>
+				<Item Name="util_generate_error.vi" Type="VI" URL="../public/_subvis/utilities/util_generate_error.vi"/>
+				<Item Name="util_launch_auto_step.vi" Type="VI" URL="../public/_subvis/utilities/util_launch_auto_step.vi"/>
+				<Item Name="util_transition_automatic.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_automatic.vi"/>
+				<Item Name="util_transition_criteria.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_criteria.vi"/>
+				<Item Name="util_transition_manual.vi" Type="VI" URL="../public/_subvis/utilities/util_transition_manual.vi"/>
+			</Item>
+			<Item Name="start.vi" Type="VI" URL="../public/_subvis/start.vi"/>
+			<Item Name="stop.vi" Type="VI" URL="../public/_subvis/stop.vi"/>
+		</Item>
+		<Item Name="templates" Type="Folder">
+			<Item Name="automatic_step_.vit" Type="VI" URL="../public/_templates/automatic_step_.vit"/>
+			<Item Name="criteria_.vit" Type="VI" URL="../public/_templates/criteria_.vit"/>
+			<Item Name="function_command_.vit" Type="VI" URL="../public/_templates/function_command_.vit"/>
+			<Item Name="function_sync_.vit" Type="VI" URL="../public/_templates/function_sync_.vit"/>
+			<Item Name="launch_.vit" Type="VI" URL="../public/_templates/launch_.vit"/>
+			<Item Name="manual_action_.vit" Type="VI" URL="../public/_templates/manual_action_.vit"/>
+			<Item Name="transition_.vit" Type="VI" URL="../public/_templates/transition_.vit"/>
+		</Item>
 	</Item>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 </Library>
