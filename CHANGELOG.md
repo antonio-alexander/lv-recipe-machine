@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.11.0] - 2021-04-13
 
 - Modified the status to include the errors from recipe data
+- Added a second example to try to show a workflow with a wizard
 
 ## [0.10.0] - 2020-12-28
 

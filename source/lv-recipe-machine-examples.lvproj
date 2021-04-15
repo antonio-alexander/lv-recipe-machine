@@ -12,6 +12,7 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="example_01.lvlib" Type="Library" URL="../lv-recipe-machine-examples/example_01/example_01.lvlib"/>
+		<Item Name="example_02.lvlib" Type="Library" URL="../lv-recipe-machine-examples/example_02/example_02.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="lv-recipe-machine.lvlib" Type="Library" URL="/&lt;userlib&gt;/antonio-alexander/lv-recipe-machine/lv-recipe-machine.lvlib"/>
