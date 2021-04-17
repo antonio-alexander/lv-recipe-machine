@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Modified the status to include the errors from recipe data
 - Added a second example to try to show a workflow with a wizard
+- Modified the configuration to allow setting of the refresh rate for the change in event that affects how often the reciep logic executes (and how fast)
 
 ## [0.10.0] - 2020-12-28
 
