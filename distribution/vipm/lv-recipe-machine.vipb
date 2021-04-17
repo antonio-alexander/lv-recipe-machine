@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-04-14 21:54:32" Creator="noobius" Comments="" ID="bf65a1f7030822c0c640ed70ffb3a92d">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-04-17 16:16:09" Creator="noobius" Comments="" ID="f7de2fcbb1f85523f1ca5a59723430e9">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_recipe_machine</Package_File_Name>
-    <Library_Version>0.11.0.2</Library_Version>
+    <Library_Version>0.11.0.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-recipe-machine</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -32,7 +32,8 @@
       <Copyright/>
       <Packager>Antonio Alexander</Packager>
       <URL>https://github.com/antonio-alexander/lv-recipe-machine/</URL>
-      <Release_Notes>- Modified the status to include the errors from recipe data</Release_Notes>
+      <Release_Notes>- Modified the status to include the errors from recipe data
+- Modified the configuration to allow setting of the refresh rate for the change in event that affects how often the reciep logic executes (and how fast)</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -238,7 +239,7 @@
         <Path>..\working\lv-recipe-machine\main.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>753BAF48404C4435D68BB682D5C9E502</GUID>
+      <GUID>6B3F5F5ACA9D2505791B682EA9E6C17F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -273,7 +274,7 @@
         <Path>..\working\lv-recipe-machine\examples\example_00_architecture.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4309CF4861688725B8BA297B08B4640A</GUID>
+      <GUID>EF3E9372FCF3F46B9F352EE3B81A07BC</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -308,7 +309,7 @@
         <Path>..\working\lv-recipe-machine\private\recipe_wrapper.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>96680EBF39859614B82FECC554431F3B</GUID>
+      <GUID>960E14CDEC0399FF7C19E9FC0F62F371</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -329,7 +330,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>325D1240E9D6CA4546178E7F54122794</GUID>
+      <GUID>204BEE6E6240D71514FB2D00E09824C7</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>

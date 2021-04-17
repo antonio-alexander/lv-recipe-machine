@@ -9,8 +9,6 @@
 </Property>
 	<Item Name="_controls" Type="Folder">
 		<Item Name="customer.ctl" Type="VI" URL="../_controls/customer.ctl"/>
-		<Item Name="data.ctl" Type="VI" URL="../_controls/data.ctl"/>
-		<Item Name="data_type.ctl" Type="VI" URL="../_controls/data_type.ctl"/>
 		<Item Name="fg_command.ctl" Type="VI" URL="../_controls/fg_command.ctl"/>
 		<Item Name="recipes.ctl" Type="VI" URL="../_controls/recipes.ctl"/>
 		<Item Name="steps_actions.ctl" Type="VI" URL="../_controls/steps_actions.ctl"/>
@@ -24,17 +22,18 @@
 		<Item Name="automatic_steps" Type="Folder">
 			<Item Name="automatic_step_address.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_address.vi"/>
 			<Item Name="automatic_step_city.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_city.vi"/>
+			<Item Name="automatic_step_finish.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_finish.vi"/>
 			<Item Name="automatic_step_first_name.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_first_name.vi"/>
-			<Item Name="automatic_step_initialize.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_initialize.vi"/>
 			<Item Name="automatic_step_last_name.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_last_name.vi"/>
+			<Item Name="automatic_step_start.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_start.vi"/>
 			<Item Name="automatic_step_state.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_state.vi"/>
+			<Item Name="automatic_step_submit.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_submit.vi"/>
 			<Item Name="automatic_step_zip_code.vi" Type="VI" URL="../_subvis/automatic_steps/automatic_step_zip_code.vi"/>
 			<Item Name="transition.vi" Type="VI" URL="../_subvis/automatic_steps/transition.vi"/>
 		</Item>
 		<Item Name="manual_actions" Type="Folder"/>
 		<Item Name="utilities" Type="Folder"/>
 		<Item Name="load_automatic.vi" Type="VI" URL="../_subvis/load_automatic.vi"/>
-		<Item Name="load_manual.vi" Type="VI" URL="../_subvis/load_manual.vi"/>
 		<Item Name="load_recipes.vi" Type="VI" URL="../_subvis/load_recipes.vi"/>
 	</Item>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>
