@@ -11,12 +11,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="_dependencies" Type="Folder" URL="../_dependencies">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="_test" Type="Folder" URL="../_test">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
 		<Item Name="lv-recipe-machine.lvlib" Type="Library" URL="../lv-recipe-machine/lv-recipe-machine.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -46,6 +40,8 @@
 				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
 				<Property Name="IncludedItemCount" Type="Int">1</Property>
 				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/lv-recipe-machine.lvlib</Property>
+				<Property Name="IncludedItems[1]" Type="Ref"></Property>
+				<Property Name="IncludedItems[2]" Type="Ref">/My Computer/lv-recipe-machine.lvlib</Property>
 				<Property Name="IncludeProject" Type="Bool">false</Property>
 				<Property Name="Path[0]" Type="Path">../../distribution/working/lv-recipe-machine.zip</Property>
 				<Property Name="ZipBase" Type="Str">NI_zipbasevirtual</Property>

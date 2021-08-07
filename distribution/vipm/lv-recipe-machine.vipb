@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-04-17 16:16:09" Creator="noobius" Comments="" ID="f7de2fcbb1f85523f1ca5a59723430e9">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-08-07 00:14:09" Creator="noobius" Comments="" ID="bb556abf2e74f6f9a4a9cd2315ce18e4">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_recipe_machine</Package_File_Name>
-    <Library_Version>0.11.0.3</Library_Version>
+    <Library_Version>0.12.0.3</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-recipe-machine</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -32,8 +32,11 @@
       <Copyright/>
       <Packager>Antonio Alexander</Packager>
       <URL>https://github.com/antonio-alexander/lv-recipe-machine/</URL>
-      <Release_Notes>- Modified the status to include the errors from recipe data
-- Modified the configuration to allow setting of the refresh rate for the change in event that affects how often the reciep logic executes (and how fast)</Release_Notes>
+      <Release_Notes>- Updated recipe_logic.vi to pass ALL errors through through the recipe_data, previously it was possible to have the recipe fail inexplicably because an expected VI was missing, wasn't found or the cast failed, now the errors won't be "lost" as long as you look for the change_out event on failure.
+- Updated the recipe_logic.vi such that it doesn't look for the index to change, but since it blocks until a step is complete, expects that a boolean be set/unset each time a step is launched, and then a result is received.
+- Fixed the template for transition so that it matches the type definition.
+- Fixed bug where the DVR could get locked up when trying to read status while the recipe logic was running, fixed by ensuring that the dequeue function for determining if a step was complete had a timeout of 0ms (don't worry the execution timing is controlled elsewhere).
+- Migrated the examples...back into lv-recipe-machine with some general clean-up.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -239,7 +242,7 @@
         <Path>..\working\lv-recipe-machine\main.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6B3F5F5ACA9D2505791B682EA9E6C17F</GUID>
+      <GUID>DBCC7EB4280FD8F6E05CB4FE955348E9</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -260,21 +263,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>examples</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>example_00_architecture.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\working\lv-recipe-machine\examples\example_00_architecture.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>EF3E9372FCF3F46B9F352EE3B81A07BC</GUID>
+      <GUID>5162F4F14A34FB7B4C1EB182A5C09675</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -309,7 +298,7 @@
         <Path>..\working\lv-recipe-machine\private\recipe_wrapper.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>960E14CDEC0399FF7C19E9FC0F62F371</GUID>
+      <GUID>2E093851FF02DC849B13DD7F89A07F3E</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -330,7 +319,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>204BEE6E6240D71514FB2D00E09824C7</GUID>
+      <GUID>AC5840C31DC1DEDCF2BDA7EA96FBF0A6</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
