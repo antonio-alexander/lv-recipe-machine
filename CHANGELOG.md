@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated the recipe_logic.vi such that it doesn't look for the index to change, but since it blocks until a step is complete, expects that a boolean be set/unset each time a step is launched, and then a result is received.
 - Fixed the template for transition so that it matches the type definition.
 - Fixed bug where the DVR could get locked up when trying to read status while the recipe logic was running, fixed by ensuring that the dequeue function for determining if a step was complete had a timeout of 0ms (don't worry the execution timing is controlled elsewhere).
+- Migrated the examples...back into lv-recipe-machine with some general clean-up.
+
+- Updated the timers to be initialized when the mode changes such that the status for recipe/step time elapsed will show zero rather than the current time in seconds since LabVIEW epoch (this doesn't fire on stop/failure).
+- Re-factored the failure modes in automatic when going from running > stopped/failed, it will not not depend on the transition queue, but will perform best effort to launch the transition VI, report any errors (merging the recipe error and any error from attempting to launch the transition) and then go back to idle. This has the 
+- Fixed bug where the resume would reset the step index to 0 if no index was wired (made the default -1). This should provide enough functionality to allow the transition vi to set the appropriate step, maintain the last value OR set the new index via the resume.
 
 ## [0.11.0] - 2021-04-13
 
