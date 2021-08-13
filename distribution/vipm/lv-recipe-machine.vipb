@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-08-07 00:14:09" Creator="noobius" Comments="" ID="bb556abf2e74f6f9a4a9cd2315ce18e4">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-08-13 16:43:29" Creator="noobius" Comments="" ID="c2f997fe8304579b370de9cae07789e7">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_recipe_machine</Package_File_Name>
-    <Library_Version>0.12.0.3</Library_Version>
+    <Library_Version>0.12.0.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-recipe-machine</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -36,7 +36,10 @@
 - Updated the recipe_logic.vi such that it doesn't look for the index to change, but since it blocks until a step is complete, expects that a boolean be set/unset each time a step is launched, and then a result is received.
 - Fixed the template for transition so that it matches the type definition.
 - Fixed bug where the DVR could get locked up when trying to read status while the recipe logic was running, fixed by ensuring that the dequeue function for determining if a step was complete had a timeout of 0ms (don't worry the execution timing is controlled elsewhere).
-- Migrated the examples...back into lv-recipe-machine with some general clean-up.</Release_Notes>
+- Migrated the examples...back into lv-recipe-machine with some general clean-up.
+- Updated the timers to be initialized when the mode changes such that the status for recipe/step time elapsed will show zero rather than the current time in seconds since LabVIEW epoch (this doesn't fire on stop/failure).
+- Re-factored the failure modes in automatic when going from running &gt; stopped/failed, it will not not depend on the transition queue, but will perform best effort to launch the transition VI, report any errors (merging the recipe error and any error from attempting to launch the transition) and then go back to idle. This has the 
+- Fixed bug where the resume would reset the step index to 0 if no index was wired (made the default -1). This should provide enough functionality to allow the transition vi to set the appropriate step, maintain the last value OR set the new index via the resume.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -242,7 +245,7 @@
         <Path>..\working\lv-recipe-machine\main.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DBCC7EB4280FD8F6E05CB4FE955348E9</GUID>
+      <GUID>B823B6CEE81A1AA35861BFCC704F9DA1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -263,7 +266,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>examples</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>5162F4F14A34FB7B4C1EB182A5C09675</GUID>
+      <GUID>6936F81290A9D8BFF5013E7EE474BA08</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -298,7 +301,7 @@
         <Path>..\working\lv-recipe-machine\private\recipe_wrapper.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2E093851FF02DC849B13DD7F89A07F3E</GUID>
+      <GUID>4A72985991EF35924DFC15D2881AA3F7</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -319,7 +322,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>AC5840C31DC1DEDCF2BDA7EA96FBF0A6</GUID>
+      <GUID>25EC9A1618980BABFE506D14A6530B0E</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
