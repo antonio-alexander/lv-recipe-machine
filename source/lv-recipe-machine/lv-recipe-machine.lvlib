@@ -71,6 +71,10 @@
 		</Item>
 		<Item Name="_subvis" Type="Folder">
 			<Item Name="functions" Type="Folder">
+				<Item Name="advanced" Type="Folder">
+					<Item Name="manual_action-asynchronous.vi" Type="VI" URL="../public/_subvis/functions/advanced/manual_action-asynchronous.vi"/>
+					<Item Name="manual_action-block.vi" Type="VI" URL="../public/_subvis/functions/advanced/manual_action-block.vi"/>
+				</Item>
 				<Item Name="automatic_abort.vi" Type="VI" URL="../public/_subvis/functions/automatic_abort.vi"/>
 				<Item Name="automatic_pause.vi" Type="VI" URL="../public/_subvis/functions/automatic_pause.vi"/>
 				<Item Name="automatic_recipe_write.vi" Type="VI" URL="../public/_subvis/functions/automatic_recipe_write.vi"/>

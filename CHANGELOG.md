@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated the timers to be initialized when the mode changes such that the status for recipe/step time elapsed will show zero rather than the current time in seconds since LabVIEW epoch (this doesn't fire on stop/failure).
 - Re-factored the failure modes in automatic when going from running > stopped/failed, it will not not depend on the transition queue, but will perform best effort to launch the transition VI, report any errors (merging the recipe error and any error from attempting to launch the transition) and then go back to idle. This has the 
 - Fixed bug where the resume would reset the step index to 0 if no index was wired (made the default -1). This should provide enough functionality to allow the transition vi to set the appropriate step, maintain the last value OR set the new index via the resume.
+- Added blocking function for manual operation that can block (or timeout) until a manual action completes or fails for situations where you want the function call to block until completion. This solves an issue where manual actions can't be called in rapid succession and succeed (they're ignored).
 
 ## [0.11.0] - 2021-04-13
 
