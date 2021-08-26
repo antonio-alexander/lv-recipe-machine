@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Re-factored the failure modes in automatic when going from running > stopped/failed, it will not not depend on the transition queue, but will perform best effort to launch the transition VI, report any errors (merging the recipe error and any error from attempting to launch the transition) and then go back to idle. This has the 
 - Fixed bug where the resume would reset the step index to 0 if no index was wired (made the default -1). This should provide enough functionality to allow the transition vi to set the appropriate step, maintain the last value OR set the new index via the resume.
 - Added blocking function for manual operation that can block (or timeout) until a manual action completes or fails for situations where you want the function call to block until completion. This solves an issue where manual actions can't be called in rapid succession and succeed (they're ignored).
+- Updated the recipe machine status to output the recipe cluster rather than the bare values (added a level to the output)
+- Fixed bug where pausing wouldn't maintain current index, also ensured that recipe timer is maintained through pausing and resuming (originally it was paused, but not resumed).
 
 ## [0.11.0] - 2021-04-13
 

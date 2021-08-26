@@ -41,7 +41,7 @@
 				<Item Name="util_timer.vi" Type="VI" URL="../private/_subvis/utilities/util_timer.vi"/>
 			</Item>
 			<Item Name="launch_main.vi" Type="VI" URL="../private/_subvis/launch_main.vi"/>
-			<Item Name="recipe_logic.vi" Type="VI" URL="../private/_subvis/recipe_logic.vi"/>
+			<Item Name="logic.vi" Type="VI" URL="../private/_subvis/logic.vi"/>
 		</Item>
 		<Item Name="block_for_change.vi" Type="VI" URL="../private/_subvis/block_for_change.vi"/>
 		<Item Name="launch_vi.vi" Type="VI" URL="../private/_subvis/launch_vi.vi"/>

@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-08-14 00:35:22" Creator="noobius" Comments="" ID="3a90f5cbb295e863be2c9a1ecc2d1693">
+<VI_Package_Builder_Settings Version="2018" Created_Date="2020-05-20 09:17:39" Modified_Date="2021-08-26 15:56:55" Creator="noobius" Comments="" ID="e2ac45eddfc5cb1be0ea60cabadefd4d">
   <Library_General_Settings>
     <Package_File_Name>antonio_alexander_lib_lv_recipe_machine</Package_File_Name>
-    <Library_Version>0.12.0.6</Library_Version>
+    <Library_Version>0.12.0.7</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\working\lv-recipe-machine</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -40,7 +40,9 @@
 - Updated the timers to be initialized when the mode changes such that the status for recipe/step time elapsed will show zero rather than the current time in seconds since LabVIEW epoch (this doesn't fire on stop/failure).
 - Re-factored the failure modes in automatic when going from running &gt; stopped/failed, it will not not depend on the transition queue, but will perform best effort to launch the transition VI, report any errors (merging the recipe error and any error from attempting to launch the transition) and then go back to idle. This has the 
 - Fixed bug where the resume would reset the step index to 0 if no index was wired (made the default -1). This should provide enough functionality to allow the transition vi to set the appropriate step, maintain the last value OR set the new index via the resume.
-- Added blocking function for manual operation that can block (or timeout) until a manual action completes or fails for situations where you want the function call to block until completion. This solves an issue where manual actions can't be called in rapid succession and succeed (they're ignored).</Release_Notes>
+- Added blocking function for manual operation that can block (or timeout) until a manual action completes or fails for situations where you want the function call to block until completion. This solves an issue where manual actions can't be called in rapid succession and succeed (they're ignored).
+- Updated the recipe machine status to output the recipe cluster rather than the bare values (added a level to the output)
+- Fixed bug where pausing wouldn't maintain current index, also ensured that recipe timer is maintained through pausing and resuming (originally it was paused, but not resumed).</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -246,7 +248,7 @@
         <Path>..\working\lv-recipe-machine\main.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>595E8125E5B7CADC9BA08FCA598210FF</GUID>
+      <GUID>B740E722C9CD533B82326625BFADA20C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -267,7 +269,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>examples</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>6DC05FA1C826001534C457AFA4D9D5E2</GUID>
+      <GUID>8F220B72EF1324F7087BCACF3FBED21C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -302,7 +304,7 @@
         <Path>..\working\lv-recipe-machine\private\recipe_wrapper.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E2A090B16346AB80B9396463E1B82AB7</GUID>
+      <GUID>615954EA3E7BCC5FAD106C401A2F184C</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -323,7 +325,7 @@
         <Synchronyze_with_Directory>false</Synchronyze_with_Directory>
         <Synchronize_Directory_Path>..</Synchronize_Directory_Path>
       </Synchronization_Info>
-      <GUID>15A16DD8BE582371225491BDB32668B1</GUID>
+      <GUID>0E1E4E7E0796776069413199CE543020</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
